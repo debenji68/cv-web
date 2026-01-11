@@ -1,0 +1,136 @@
+<!--DOCTYPE html-->
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Deiber Benjamin">
+	<meta name="keywords" content="site web, HTML, CSS, CV, Cybersécurité, Diplômes, Formations, Expériences professionnelles, Réseaux et Télécommunications">
+	<meta name="description" content="Page principale donnant un aperçu du CV avec des liens vers les autres pages.">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<title>Mon CV - Page principale</title>
+</head>
+
+<body>
+	<figure><img id="fond" src="img/fond_cv.webp" border="0" alt="Fond"></a></figure>
+
+	<header>
+		<figure><img src="img/photo_profil.jpg" alt="Photo de profile" border="0"></figure>
+		<div>
+			<h1>Deiber Benjamin</h1>
+			<p>Étudiant en Réseaux et Télécommunications | Passionné par la cybersécurité et les nouvelles technologies.</p>
+			<p><a href="https://maps.app.goo.gl/VhSzwQHute3TE4Aa9" target="_blank"><i class="fa-solid fa-location-dot"></i> Fessenheim, France</a> |
+				<a href="mailto:benjamin.deiber@uha.fr"><i class="fa-regular fa-envelope"></i> benjamin.deiber@uha.fr</a> |
+				<a href="tel:+33637714714"><i class="fa-solid fa-phone"></i> 06 37 71 47 14</a>
+			</p>
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<li id="page_active"><a href="index.html"><i class="fa-solid fa-house"></i> CV</a></li>
+			<li><a href="formation.html"><i class="fa-solid fa-graduation-cap"></i> Formations</a></li>
+			<li><a href="diplomes.html"><i class="fa-solid fa-award"></i> Diplômes</a></li>
+			<li><a href="experiences.html"><i class="fa-solid fa-suitcase"></i> Expériences professionnelles et Projets</a></li>
+		</ul>
+	</nav>
+	<main id="cv_grid">
+		<section id="formations">
+			<h1 class="txt_bleu">Formations</h1>
+			<p>2025-2028<br><a href="formation.html#BUT_formation">BUT Réseaux et Télécommunications<br>IUT de Colmar</P></a>
+			<p>2022-2025<br><a href="formation.html#Bac_formation">Baccalauréat générale<br>Lycée Theodor Deck à Guebwiller</p></a>
+			<p>2018-2022<br><a href="formation.html#Brevet_formation">Brevet des collèges<br>Collège Félix Eboué à Fessenheim</p></a>
+		</section>
+		<section id="diplomes">
+			<h1 class="txt_bleu">Diplômes</h1>
+			<p><a href="diplomes.html#Bac_diplome">Baccalauréat Général<br>Mention Bien</p></a>
+			<p><a href="diplomes.html#college_diplome">Brevet<br>Mention Très Bien</p></a>
+			<p><a href="diplomes.html#Pix_diplome">Certification PIX<br>Avancé 1</p></a>
+		</section>
+		<section id="experiences">
+			<h1 class="txt_bleu"> Expériences Professionnelles et Projets</h1>
+			<p><a href="experiences.html#Stage_experience">Stage Banquier au Crédit-Mutuel<br>Fessenheim<br>18/01/2022 - 21/01/2022</p></a>
+			<p><a href="experiences.html#Projet_experience">serveur NAS/Minecraft domestique</p></a>
+		</section>
+		<section id="competences">
+			<h1 class="txt_bleu">Compétences</h1>
+			<article class="flexbox">
+				<div class="cpt_flex">
+					<h2>Réseaux & Télécommunications</h2>
+					<ul>
+						<li>Configuration routeurs & switches</li>
+						<li>Protocoles : TCP/IP, VLAN, VPN, DHCP, DNS</li>
+						<li>Administration Linux & Windows Server</li>
+						<li>Virtualisation (Docker, VirtualBox)</li>
+						<li>Sécurité réseau & pare-feu</li>
+					</ul>
+				</div>
+				<div class="cpt_flex">
+					<h2>Compétences Techniques</h2>
+					<ul>
+						<li>Développement Web : HTML, CSS</li>
+						<li>Programmation : Python, Bash</li>
+						<li>Base de données : MySQL</li>
+						<li>Outils : GitHub, Docker, Wireshark</li>
+						<li>Suite Office & LibreOffice</li>
+					</ul>
+				</div>
+				<div class="cpt_flex">
+					<h2>Compétences Humaines</h2>
+					<ul>
+						<li>Travail en équipe et collaboration</li>
+						<li>Curiosité</li>
+						<li>Communication claire et efficace</li>
+						<li>Autonomie et rigueur</li>
+						<li>Consciencieux et travaillant</li>
+					</ul>
+				</div>
+			</article>
+		</section>
+		<section id="info_complementaires">
+			<h1 class="txt_bleu">Informations Complémentaires</h1>
+			<article class="flexbox">
+				<div class="info_flex">
+					<h2>🌍 Langues</h2>
+					<ul>
+						<li>Français : Langue maternelle</li>
+						<li>Anglais : B1 (Intermédiaire)</li>
+						<li>Allemand : B2 (Intermédiaire avancé)</li>
+					</ul>
+				</div>
+				<div class="info_flex">
+					<h2>🏃 Sports & Activités</h2>
+					<ul>
+						<li>Teakwondo : 9 ans en club</li>
+						<li>Handball : 3 ans en club (ailier droit)</li>
+						<li>Course à pied : Semi-marathon (2h30)</li>
+					</ul>
+				</div>
+				<div class="info_flex">
+					<h2>🎨 Hobbies</h2>
+					<ul>
+						<li>Modélisation et impression 3D</li>
+						<li>Programmation de serveur Linux/Windows et de jeux vidéo</li>
+						<li>Jouer à des jeux vidéo</li>
+						<li>Apprendre la cybersécurité</li>
+					</ul>
+				</div>
+				<div class="info_flex">
+					<h2>📚 Centres d'intérêt</h2>
+					<ul>
+						<li>Nouvelles technologies et cybersécurité</li>
+						<li>Culture cinématographique</li>
+						<li>Culture japonaise</li>
+						<li>Curiosité pour les mathématiques</li>
+					</ul>
+				</div>
+			</article>
+		</section>
+		<a href="#" class="retour-haut">RETOUR EN HAUT <i class="fa-solid fa-arrow-up"></i></a>
+	</main>
+	<footer>
+		<p>Web-design : Deiber Benjamin --- Sources documentations : expérience personnelle</p>
+		<p>Sources images : <a href="https://fr.pinterest.com/lauriemacque/telecharger-cv-gratuit/">https://fr.pinterest.com/lauriemacque/telecharger-cv-gratuit/</a> -- <a href="https://www.intramuros.org/fessenheim/etablissements_scolaires/289277">https://www.intramuros.org/fessenheim/etablissements_scolaires/289277</a> -- <a href="https://www.jds.fr/mulhouse/guebwiller/enseignement-formation/lycee-theodore-deck-3977_L">https://www.jds.fr/mulhouse/guebwiller/enseignement-formation/lycee-theodore-deck-3977_L</a></p>
+		<p><a href="https://jpo.uha.fr/index.php/produit/iut-de-colmar/">https://jpo.uha.fr/index.php/produit/iut-de-colmar/</a> -- <a href="https://www.jds.fr/fessenheim/banque-et-assurance/credit-mutuel-de-la-hardt-2467_L">https://www.jds.fr/fessenheim/banque-et-assurance/credit-mutuel-de-la-hardt-2467_L</a> -- photo personnelle</p>
+	</footer>
+</body>
+</html>

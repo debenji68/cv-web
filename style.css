@@ -1,0 +1,514 @@
+body {
+	font-family: Arial;
+	margin: 5px;
+	padding: 0;
+	font-size: 20px;
+}
+header {
+	display: flex;
+	align-items: center;
+	background-image: linear-gradient(to right, black, #333333);
+	min-height: 200px;
+	padding: 20px;
+	border: 2px grey solid;
+	color: #edd5d5;
+}
+.txt_bleu {
+	color: blue;
+}
+a {
+	text-decoration: none;
+	color:black
+}
+header a {
+	color: red;
+	font-weight: bold;
+}
+header img {
+	width: auto;
+	height: 140px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+header h1 {
+	margin: 0;
+}
+nav ul a {
+	color: white;
+}
+nav ul {
+	grid-area: etiq_nav;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: center;
+	list-style: none;
+	height: 30px;
+	margin-bottom: 15vh;
+}
+nav ul li {
+	background-color: #2f4f4f;
+	text-align: center;
+	border: 1px white solid;
+	padding: 13px;
+	flex: 0 0 410px;
+	border-radius: 10px;
+}
+#page_active {
+	background-color: #260029;
+}
+#page_active,
+nav > ul > li:hover {
+	font-weight: bold;
+}
+#cv_grid {
+	margin-top: 30px;
+	margin-left: 8vw;
+	display: grid;
+	grid-template-columns: 36vw 38vw;
+	grid-template-rows: auto auto auto auto auto auto auto;
+	grid-gap: 90px;
+	padding: 10px;
+	grid-template-areas:
+		"etiq_nav etiq_nav"
+		"etiq_formation etiq_diplome"
+		"etiq_experience etiq_experience"
+		"etiq_competence etiq_competence"
+		"etiq_complementaire etiq_complementaire"
+		"etiq_bouton etiq_bouton"
+		"etiq_footer etiq_footer";
+}
+
+#formations {
+	grid-area: etiq_formation;
+	border-width: 3px;
+	border-color: #260029;
+	border-style: inset;
+	text-align: center;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 3px 5px 8px gray;
+}
+
+#diplomes {
+	grid-area: etiq_diplome;
+	border-width: 3px;
+	border-color: #260029;
+	border-style: inset;
+	text-align: center;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 3px 5px 8px gray;
+}
+
+#experiences {
+	grid-area: etiq_experience;
+	border-width: 3px;
+	border-color: #260029;
+	border-style: inset;
+	text-align: center;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 3px 5px 8px gray;
+}
+#formations p {
+	font-family: Verdana;
+}
+#diplomes p {
+	font-family: Verdana;
+}
+#experiences p {
+	font-family: Verdana;
+}
+#fond {
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: -10;
+}
+#competences {
+	grid-area: etiq_competence;
+	border-width: 3px;
+	border-color: #260029;
+	border-style: inset;
+	text-align: center;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 3px 5px 8px gray;
+}
+#competences li {
+	font-family: Verdana;
+}
+.flexbox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.cpt_flex {
+	border: 1px solid black;
+	margin: 19px;
+	background-color: #d4e3eb;
+	list-style: inside;
+	text-align: justify;
+	width: 24vw;
+}
+#info_complementaires {
+	grid-area: etiq_complementaire;
+	border-width: 3px;
+	border-color: #260029;
+	border-style: inset;
+	text-align: center;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 3px 5px 8px gray;
+}
+#competences h2 {
+	text-align: center;
+}
+.info_flex {
+	border: 1px solid black;
+	margin: 20px;
+	background-color: #d4e3eb;
+	list-style: inside;
+	text-align: justify;
+	width: 36vw;
+}
+#info_complementaires li {
+	font-family: Verdana;
+}
+#info_complementaires h2 {
+	text-align: center;
+}
+footer {
+	grid-area: etiq_footer;
+	font-size: x-small;
+	text-align: center;
+}
+html {
+	scroll-behavior: smooth;
+}
+.retour-haut {
+	grid-area: etiq_bouton;
+	background-color: darkgrey;
+	color: white;
+	text-align: center;
+	padding: 13px;
+	border-radius: 10px;
+	margin: 0px 30vw;
+	width: 20vw;
+}
+#formation_grid {
+	margin-top: 30px;
+	margin-left: 8vw;
+	display: grid;
+	grid-template-columns: 36vw 38vw;
+	grid-template-rows: auto auto auto auto auto auto;
+	grid-gap: 90px;
+	padding: 10px;
+	grid-template-areas:
+		"etiq_nav etiq_nav"
+		"etiq_BUT etiq_BUT"
+		"etiq_licee etiq_licee"
+		"etiq_college etiq_college"
+		"etiq_bouton etiq_bouton"
+		"etiq_footer etiq_footer";
+}
+#BUT{
+	grid-area: etiq_BUT;
+	border-width: 3px;
+	border-color: #260029;
+	border-style: inset;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 3px 5px 8px gray;
+	text-indent: 20px;
+}
+#BUT li {
+	font-family: Verdana;
+}
+.flexbox_formation {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.but_flex {
+	border: 1px solid black;
+	margin: 19px;
+	background-color: #d4e3eb;
+	list-style: inside;
+	text-align: justify;
+	width: 26vw;
+	flex: 1 1 220px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px gray;
+}
+.but_flex h3 {
+	font-weight: bold;
+}
+.gras{
+	font-weight: bold;
+}
+#projet {
+	border-width: 1px;
+	border-color: #260029;
+	border-style: inset;
+	border-radius: 10px;
+	background-color: #d4e3eb;
+	box-shadow: 3px 3px 5px gray;
+	text-indent: 20px;
+	margin: 19px;
+}
+.projet ul{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style: none; 
+	padding: 5px;
+	
+}
+.projet ul li {
+	background-color: white;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 4px;
+	text-indent: 0%;
+}
+#lycee{
+	grid-area: etiq_licee;
+	border-width: 3px;
+	border-color: #260029;
+	border-style: inset;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 3px 5px 8px gray;
+	text-indent: 20px;
+}
+#lycee li {
+	font-family: Verdana;
+}
+.spécialité {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+.spe {
+	border: 1px solid black;
+	margin: 19px;
+	background-color: #d4e3eb;
+	text-align: justify;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px gray;
+}
+#college{
+	grid-area: etiq_college;
+	border-width: 3px;
+	border-color: #260029;
+	border-style: inset;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 3px 5px 8px gray;
+	text-indent: 20px;
+}
+#college li {
+	font-family: Verdana;
+}
+.cours {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	flex-direction: row;
+}
+.matiere {
+	border: 1px solid black;
+	margin: 19px;
+	background-color: #d4e3eb;
+	text-align: justify;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px gray;
+	padding: 20px;
+	flex: 0 1 100vw;
+}
+#iut{
+	float: right;
+	width: auto;
+	height: 15vh;
+	border: 3px solid grey;
+}
+#deck{
+	float: right;
+	width: auto;
+	height: 15vh;
+	border: 3px solid grey;
+}
+#felix{
+	float: right;
+	width: auto;
+	height: 15vh;
+	border: 3px solid grey;
+}
+#diplomes_grid {
+	margin-top: 30px;
+	margin-left: 8vw;
+	display: grid;
+	grid-template-columns: 36vw 38vw;
+	grid-template-rows: auto auto auto auto auto auto;
+	grid-gap: 90px;
+	padding: 10px;
+	grid-template-areas:
+		"etiq_nav etiq_nav"
+		"etiq_licee etiq_licee"
+		"etiq_pix etiq_pix"
+		"etiq_college etiq_college"
+		"etiq_bouton etiq_bouton"
+		"etiq_footer etiq_footer";
+}
+.diplome {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.note_mention {
+	border: 1px solid black;
+	margin: 19px;
+	background-color: #d4e3eb;
+	list-style: inside;
+	text-align: justify;
+	flex: 1 1 220px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px gray;
+}
+.note_details {
+	border: 1px solid black;
+	margin: 19px;
+	background-color: #d4e3eb;
+	list-style: inside;
+	text-align: justify;
+	width: 76vw;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px silver;
+}
+.txt_eloigne {
+	float: right;
+	padding-right: 1vw;
+}
+.dpl {
+	font-size: 5vw;
+	color: gold;
+	float: left;
+	margin-right: 1vw;
+}
+#pix{
+	grid-area: etiq_pix;
+	border-width: 3px;
+	border-color: #260029;
+	border-style: inset;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 3px 5px 8px gray;
+	text-indent: 20px;
+}
+#experiences_grid {
+	margin-top: 30px;
+	margin-left: 8vw;
+	display: grid;
+	grid-template-columns: 36vw 38vw;
+	grid-template-rows: auto auto auto auto auto ;
+	grid-gap: 90px;
+	padding: 10px;
+	grid-template-areas:
+		"etiq_nav etiq_nav"
+		"etiq_stage etiq_stage"
+		"etiq_projet etiq_projet"
+		"etiq_bouton etiq_bouton"
+		"etiq_footer etiq_footer";
+}
+#stage{
+	grid-area: etiq_stage;
+	border-width: 3px;
+	border-color: #260029;
+	border-style: inset;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 3px 5px 8px gray;
+}
+#stage p, h2,h1, li{
+	padding-left: 1vw;;
+}
+.stage {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+.info_stage {
+	border: 1px solid black;
+	margin: 19px;
+	background-color: #d4e3eb;
+	list-style: inside;
+	text-align: justify;
+	flex: 1 1 220px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px gray;
+}
+.competence {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	flex-direction: row;
+}
+.competence_inf {
+	border: 1px solid black;
+	margin: 19px;
+	background-color: #d4e3eb;
+	list-style: inside;
+	text-align: center;
+	width: 36vw;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px silver;
+}
+#stage > li{
+	list-style: none;
+}
+.txt_vert{
+	color:green;
+}
+#projet{
+	grid-area: etiq_projet;
+	border-width: 3px;
+	border-color: #260029;
+	border-style: inset;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 3px 5px 8px gray;
+}
+#projet p,h2,h1,li{
+	padding-left: 1vw;
+}
+#projet > li{
+	padding-bottom: 1vh;
+}
+#stage li{
+	font-family: Verdana;
+}
+#projet li{
+	font-family: Verdana;
+}
+#banque{
+	float: right;
+	width: auto;
+	height: 25vh;
+	border: 3px solid grey;
+	margin-bottom: 2vh;
+}
+#serveur{
+	margin-bottom: 2vh;
+	float: right;
+	width: 18vw;
+	height: auto;
+	border: 3px solid grey;
+}
